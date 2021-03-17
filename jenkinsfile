@@ -4,11 +4,11 @@
 
 node {
     stage('Shared') {
-        steps {
+        
                 script {
                     bat(script: '@git submodule update --init --recursive')
                 }
-            }
+            
     }
 
         load 'TestSubmodule/jenkinsfile'
