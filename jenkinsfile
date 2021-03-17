@@ -1,30 +1,16 @@
-pipeline {
-    agent any
-    stages {
-		stage('main stage01') {
-            steps {
+
+
+
+
+node {
+    stage('Shared') {
+        steps {
                 script {
                     bat(script: '@git submodule update --init --recursive')
                 }
             }
-        }
-		
-		stage('main stage01 - volani Submodulu') {
-            steps {
-                script(readFileFromWorksp('TestSubmodule/jenkinsfile'))
-            }
-        }
-		
-		stage('main stage02') {
-            steps {
-                script {
-					echo "-----------------------------------------------"
-                    echo "---verze jenkinsfile:"
-					echo "------------------------------------------------"
-                }
-            }
-        }
-	
-       
     }
+
+        load 'TestSubmodule/jenkinsfile'
+ 
 }
