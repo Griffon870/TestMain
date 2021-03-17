@@ -4,9 +4,7 @@ pipeline {
 		stage('main stage01') {
             steps {
                 script {
-					echo "-----------------------------------------------"
-                    echo "---verze jenkinsfile:"
-					echo "------------------------------------------------"
+                    bat(script: '@git submodule update --init --recursive')
                 }
             }
         }
