@@ -17,7 +17,7 @@ pipeline {
             }
         }
 		
-		stage('main stage01') {
+		stage('main stage02') {
             steps {
                 script {
 					echo "-----------------------------------------------"
