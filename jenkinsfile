@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    stages {
+		stage('show jenkisfile version') {
+            steps {
+                script {
+					echo "-----------------------------------------------"
+                    echo "---verze jenkinsfile: ${JENKINSFILE_VERSION}---"
+					echo "------------------------------------------------"
+                }
+            }
+        }
+	
+       
+    }
+}
