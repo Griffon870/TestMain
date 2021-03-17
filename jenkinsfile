@@ -5,9 +5,9 @@
 node {
     stage('Shared') {
         
-                script {
+
                     bat(script: '@git submodule update --init --recursive')
-                }
+                
             
     }
 
