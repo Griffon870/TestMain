@@ -1,13 +1,9 @@
-
-
-
-
 node {
     stage('Shared') {
-        
-
-                  git submodule update --init --recursive
-                
+        checkout scm
+                script {
+                    bat(script: '@git submodule update --init --recursive')
+                }
             
     }
 
