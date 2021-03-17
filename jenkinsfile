@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
 					echo "-----------------------------------------------"
-                    echo "---verze jenkinsfile: ${JENKINSFILE_VERSION}---"
+                    echo "---verze jenkinsfile:
 					echo "------------------------------------------------"
                 }
             }
