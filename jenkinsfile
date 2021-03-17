@@ -1,7 +1,23 @@
 pipeline {
     agent any
     stages {
-		stage('show jenkisfile version') {
+		stage('main stage01') {
+            steps {
+                script {
+					echo "-----------------------------------------------"
+                    echo "---verze jenkinsfile:"
+					echo "------------------------------------------------"
+                }
+            }
+        }
+		
+		stage('main stage01 - volani Submodulu') {
+            steps {
+                script(readFileFromWorksp('TestSubmodule/jenkinsfile'))
+            }
+        }
+		
+		stage('main stage01') {
             steps {
                 script {
 					echo "-----------------------------------------------"
