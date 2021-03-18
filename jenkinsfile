@@ -6,7 +6,11 @@ node {
                 }
             
     }
+	stage('blbaabla ') {
+	 load 'TestSubmodule/jenkinsfile'
+	
+	}
 
-        load 'TestSubmodule/jenkinsfile'
+       
  
 }
