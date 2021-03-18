@@ -6,10 +6,7 @@ node {
                 }
              
     }
-
-stage('blabla') {
-	load 'TestSubmodule/jenkinsfile'
-}
+load 'TestSubmodule/jenkinsfile'
        
  
 }
