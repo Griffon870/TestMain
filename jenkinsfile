@@ -4,9 +4,12 @@ node {
                 script {
                     bat(script: '@git submodule update --init --recursive')
                 }
-             load 'TestSubmodule/jenkinsfile'
+             
     }
 
+stage('blabla') {
+	load 'TestSubmodule/jenkinsfile'
+}
        
  
 }
