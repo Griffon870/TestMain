@@ -2,15 +2,16 @@ pipeline {
 agent any
  stages {
     stage('Shared') {
-      
+       steps {
                 script {
                     bat(script: '@git submodule update --init --recursive')
                 }
-            
+            }
     }
 	stage('blbaabla ') {
+	 steps {
 	 load 'TestSubmodule/jenkinsfile'
-	
+	}
 	}
 
        }
